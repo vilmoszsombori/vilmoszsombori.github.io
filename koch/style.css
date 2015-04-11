@@ -1,0 +1,15 @@
+canvas {
+	border: 1px solid #d3d3d3;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 720px
+}
+
+.centre {
+	width: 100%;
+	float: left;
+	align: center;
+}

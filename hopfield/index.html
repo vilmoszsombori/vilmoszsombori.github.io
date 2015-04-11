@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hopfield net</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="hopfield.js"></script>
+</head>
+
+<body onload="buildTable('output'); buildTable('input', true);"
+	class="center">
+
+	<h1 align="center">Hopfield Network</h1>
+	<table>
+		<tr>
+			<td>
+				<h3>Input Pattern</h3>
+			</td>
+			<td></td>
+			<td>
+				<h3>Output Pattern</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="input"></table>
+			</td>
+			<td></td>
+			<td>
+				<table id="output"></table>
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td align="center">
+				<button onclick="clearall();">Clear grid</button>
+			</td>
+			<td align="center">
+				<button onclick="learn();">Learn</button>
+			</td>
+			<td align="center">
+				<button onclick="resetall();">Reset network</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td align="center">
+				<form name="eneraform">
+					Energy = <input type="text" name="enera" id="energy0" size="10">
+				</form>
+			</td>
+			<td align="center">
+				<p>
+					<select id="loop">
+						<option value="1" selected="selected">1</option>
+						<option value="16">16</option>
+						<option value="256">256</option>
+						<option value="1024">1024</option>
+					</select>
+					<button
+						onclick="asynch(parseInt(document.getElementById('loop').value, 10));">Asynch</button>
+					<br /><br/>
+					<button onclick="synch();">Synch</button>
+				</p>
+			</td>
+			<td align="center">
+				<form name="enerbform">
+					Energy = <input type="text" name="enerb" id="energy1" size="10">
+				</form>
+			</td>
+		</tr>
+
+	</table>
+	
+</body>
+
+</html>

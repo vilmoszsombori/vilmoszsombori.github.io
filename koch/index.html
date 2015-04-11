@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Koch curve</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="update();">
+	<div class="centre">
+		<h1>Koch curve</h1>
+	</div>
+	<div class="centre">
+		<canvas id="canvas" width="720"	height="480">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+	</div>
+	<div class="centre">
+		<button id="inc" onclick="update(inc);">n++</button>
+		<button id="dec" onclick="update(dec);">n--</button>
+		<a id="n">n = 1</a>
+	</div>
+
+	<script src="koch.js"></script>
+</body>
+</html>
