@@ -53,7 +53,6 @@ function update(f) {
 		f();
 	}
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	koch3(N, 0, 10, 2 * canvas.height / 3, canvas.width / 3);
-	koch3(N, toRadians(-60), 10, 2 * canvas.height / 3, canvas.width / 3);
+	koch3(N, 0, 10, canvas.height / 3, canvas.width - 20);
 	document.getElementById("n").innerHTML = "n = " + N;	
 }
