@@ -27,7 +27,7 @@ function koch4(n, alpha, x0, y0, length) {
 		koch4(n-1, alpha, x3, y3, length);
 		koch4(n-1, alpha - toRadians(90), x4, y4, length); 
 		koch4(n-1, alpha, x5, y5, length);		
-		koch4(n-1, alpha, x2, y2, length);
+		//koch4(n-1, alpha, x2, y2, length);
 	}	
 }
 
