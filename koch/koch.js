@@ -81,6 +81,6 @@ function update(f) {
 		f();
 	}
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	koch4(N, 0, 10, canvas.height / 3, canvas.width - 20);
+	koch4(N, 0, 10, canvas.height / 4, canvas.width - 20);
 	document.getElementById("n").innerHTML = "n = " + N;	
 }
